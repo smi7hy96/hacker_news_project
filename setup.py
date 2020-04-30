@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name='hackerank_api_example',
+    name='hacker_news_api_example',
     version='o.1',
-    packages=['flask' 'requests', 'bs4', ],
+    packages=['flask', 'requests', 'bs4'],
     url='',
     license='MITM',
     author='kieran cornwall',
