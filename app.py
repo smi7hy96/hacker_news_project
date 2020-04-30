@@ -4,7 +4,7 @@ from src.hackerank_news_data_factory import HackerRankDataFactory as HackerRankD
 
 app = Flask(__name__)
 
-@app.route('/hackerank-top-10')
+@app.route('/hacker-news-top-10')
 def hello_world():
     return jsonify(HackerRankDataFactory().get_hackrank_news_top_10())
 
