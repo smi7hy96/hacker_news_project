@@ -9,4 +9,4 @@ def hello_world():
     return jsonify(HackerRankDataFactory().get_hackrank_news_top_10())
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run()
