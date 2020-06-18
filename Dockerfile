@@ -6,6 +6,6 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["python"]
+ENTRYPOINT ["./start.sh"]
 
-CMD ["app.py"]
+CMD ["0.0.0.0", "5000"]
