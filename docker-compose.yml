@@ -1,7 +1,9 @@
 version: '3'
+
 services:
   hacker_news:
-    container_name: hacker_news_api
     image: kcornwall/hacker_news_api
+    deploy:
+      replicas: 3
     ports:
     - 5000:5000
