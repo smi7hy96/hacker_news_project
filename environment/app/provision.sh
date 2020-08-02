@@ -12,6 +12,8 @@ sudo apt-get upgrade -y
 # install git
 sudo apt-get install git -y
 
+sudo apt install nginx -y
+
 sudo apt install python3 -y
 
 sudo apt-get install python3-pip -y
@@ -25,11 +27,13 @@ sudo cp /vagrant/setup.py /home/ubuntu
 sudo cp /vagrant/start.sh /home/ubuntu
 sudo cp /vagrant/requirements.txt /home/ubuntu
 
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt -y
 
 sudo apt-get install gunicorn -y
 
-guni
+sudo systemctl restart nginx
+#
+# gunicorn -w 3 /home/ubuntu:app
 #
 # cd /home/ubuntu
 #
