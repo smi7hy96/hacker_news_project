@@ -20,7 +20,7 @@ sudo apt-get install python3-pip -y
 
 sudo apt install libpython2.7-stdlib -y
 
-sudo install pyhon3-venv -y
+sudo install python3-venv -y
 
 sudo cp /vagrant/app.py /home/ubuntu
 sudo cp /vagrant/setup.py /home/ubuntu
