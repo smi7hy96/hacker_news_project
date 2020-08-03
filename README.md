@@ -9,7 +9,12 @@ This project is to show a basic implementation of webscraping and generating JSO
 
 ## Step 2: GO TO DIRECTORY on Local Machine
 
-`Vagrant UP`
+`vagrant up`
+
+## Step 3: Re-run the provision file
+
+`vagrant provision`
+
 
 ## This should be running now so going to the web browser should work
 `http://development.local/hacker-news-top-10`

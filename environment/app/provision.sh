@@ -32,20 +32,6 @@ pip3 install -r /home/ubuntu/app/requirements.txt
 #INSTALL GUNICORN
 sudo apt-get install gunicorn -y
 
-
 #LAUNCH APP
-# gunicorn --bind 127.0.0.1:5000 --chdir /home/ubuntu/app app --daemon
 exec gunicorn --chdir /home/ubuntu/app --reload app \
   --bind 127.0.0.1:5000 --daemon
-
-# gunicorn -b 192.168.10.100:5000 app
-# #REMOVE SYMLINK FOR NGINX
-# sudo unlink /etc/nginx/sites-enabled/default
-#
-# sudo nginx -s reload
-#
-# sudo systemctl restart nginx
-#
-#GUNICORN RUN COMMAND
-# gunicorn -w 3 /home/ubuntu:app
-# gunicorn -w 2 -b 127.0.0.1:5000 /home/ubuntu:app
