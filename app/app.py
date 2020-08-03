@@ -4,6 +4,7 @@ from src.hackerank_news_data_factory import HackerRankDataFactory as HackerRankD
 
 app = Flask(__name__)
 
+application = app
 
 @app.route('/hacker-news-top-10')
 def hacker_news_top_10():
