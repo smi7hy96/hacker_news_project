@@ -35,7 +35,8 @@ sudo apt-get install gunicorn -y
 
 #LAUNCH APP
 # gunicorn --bind 127.0.0.1:5000 --chdir /home/ubuntu/app app --daemon
-./../ubuntu/app/start.sh
+exec gunicorn --chdir /home/ubuntu/app --reload app \
+  --bind 127.0.0.1:5000 --daemon
 
 # gunicorn -b 192.168.10.100:5000 app
 # #REMOVE SYMLINK FOR NGINX
