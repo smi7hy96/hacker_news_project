@@ -33,5 +33,6 @@ pip3 install -r /home/ubuntu/app/requirements.txt
 sudo apt-get install gunicorn -y
 
 #LAUNCH APP
+# gunicorn --bind 127.0.0.1:5000 --chdir /home/ubuntu/app app --daemon
 exec gunicorn --chdir /home/ubuntu/app --reload app \
   --bind 127.0.0.1:5000 --daemon
