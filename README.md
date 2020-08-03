@@ -28,7 +28,7 @@ This project is to show a basic implementation of webscraping and generating JSO
 
 `pkill gunicorn`
 
-## To rerun the application
+## TO RERUN THE APPLICATION
 ## Step 1: Go into machine (if not already in it)
 
 `vagrant ssh app`
@@ -36,3 +36,16 @@ This project is to show a basic implementation of webscraping and generating JSO
 ## Step 2: Start gunicorn process
 
 `./../ubuntu/app/start.sh`
+
+## TO RUN UNITTESTS
+## Step 1: Go into machine
+
+`vagrant ssh app`
+
+## Step 2: Go to app folder (where testfile is located)
+
+`cd /home/ubuntu/app`
+
+## Step 3: Run the unit test. Should get output of '10' and 'Ran 2 tests'
+
+`python3 -m unittest test_top_10.py`
