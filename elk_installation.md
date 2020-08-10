@@ -102,3 +102,16 @@ https://logz.io/learn/complete-guide-elk-stack/
 
 4) Verify set-up
 	- Navigate to `http://<elastic_ip>:5601`
+
+
+
+### Step 5 - Installing Beats on App server
+
+You should install Metricbeat as close as possible to the service you want to monitor.
+
+For this guide, Metricbeats is being installed into the app instance(s)
+
+
+1) Installation
+	- `$ curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.8.1-amd64.deb`
+	- `$ sudo dpkg -i metricbeat-7.8.1-amd64.deb`
